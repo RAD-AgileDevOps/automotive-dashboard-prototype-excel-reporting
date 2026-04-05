@@ -1,30 +1,26 @@
-/vendor/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories (The "Heavy" Hardware)
 node_modules/
-npm-debug.log
-yarn-error.log
+jspm_packages/
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Nuxt.js build and output (Machine-generated logic)
+.nuxt/
+.output/
+dist/
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
+# Development / Environment secrets
 .env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+.env.*
+!.env.example
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# IDE / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
